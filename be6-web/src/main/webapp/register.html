@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+h1 {
+	text-align: center;
+}
+
+form {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+div {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<h1>REGISTER</h1>
+	<form action="/be6-web/confirmation.jsp" method="post">
+		<label> <b>Username:</b>
+		</label> <input type="text" id="username" name="username"
+			placeholder="Enter Username" required /><br> <label> <b>Password:</b>
+		</label> <input type="password" id="password" name="password"
+			style="-webkit-text-security: circle" placeholder="Enter Password"
+			required /><br> <label> <b>Gender:</b>
+		</label> <input type="radio" id="female" name="gender" value="female">
+		<label for="female">female</label> <input type="radio" id="male"
+			name="gender" value="male"> <label for="male">male</label><br>
+
+		<label> <b>Hobbies:</b>
+		</label> <input type="checkbox" id="music" name="hobbies" value="music">
+		<label for="music"> Music </label> <input type="checkbox" id="sport"
+			name="hobbies" value="Sport"> <label for="sport">
+			Sport </label> <input type="checkbox" id="reading" name="hobbies"
+			value="Reading"> <label for="reading"> Reading </label><br>
+
+		<label> <b>Languages:</b>
+		</label> <input type="checkbox" id="vietnamese" name="languages"
+			value="vietnamese"> <label for="vietnamese">
+			Vietnamese </label> <input type="checkbox" id="english" name="languages"
+			value="english"> <label for="english"> English </label> <input
+			type="checkbox" id="germany" name="languages" value="germany"> <label
+			for="germany"> Germany </label><br> <label for="cities"><b>City:</b>
+		</label> <select id="city" name="city">
+			<option value="Choose the city">Choose the city</option>
+			<option value="Ho Chi Minh City">Ho Chi Minh City</option>
+			<option value="Hanoi">Hanoi</option>
+			<option value="Sydney">Sydney</option>
+		</select><br>
+
+		<button>Submit</button>
+	</form>
+</body>
+</html>
